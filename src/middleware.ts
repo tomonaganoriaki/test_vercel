@@ -16,7 +16,7 @@ export const config = {
 
 export default function middleware(req: NextRequest) {
 
-    if (ENVIRONMENT !== 'test') {
+    if (ENVIRONMENT === 'production') {
         return NextResponse.next();
     }
 
