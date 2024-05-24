@@ -4,11 +4,18 @@ const USER = process.env.BASIC_AUTH_USER;
 const PASSWORD = process.env.BASIC_AUTH_PASSWORD;
 const ENVIRONMENT = process.env.ENVIRONMENT;
 
+console.log('⭐️⭐️');
+console.log('USER:', USER);
+console.log('PASSWORD:', PASSWORD);
+console.log('ENVIRONMENT:', ENVIRONMENT);
+console.log('⭐️⭐️');
+
 export const config = {
     matcher: '/:path*'
 };
 
 export default function middleware(req: NextRequest) {
+
     if (ENVIRONMENT !== 'test') {
         return NextResponse.next();
     }
