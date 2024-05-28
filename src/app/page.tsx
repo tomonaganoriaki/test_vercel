@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 const ENVIRONMENT = process.env.NEXT_PUBLIC_ENVIRONMENT;
+console.log("ENVIRONMENT", ENVIRONMENT);
 
 export default function Home() {
   const [error, setError] = useState(false);
