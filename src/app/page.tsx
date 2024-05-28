@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const ENVIRONMENT = process.env.ENVIRONMENT;
+const ENVIRONMENT = process.env.NEXT_PUBLIC_ENVIRONMENT;
 
 export default function Home() {
   const [error, setError] = useState(false);
