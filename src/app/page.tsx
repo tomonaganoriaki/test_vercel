@@ -8,7 +8,7 @@ export default function Home() {
 
   const handleClick = () => {
     setError(true);
-    throw new Error("本番環境（平山times）で、意図的なエラーが発生しました！");
+    throw new TypeError("本番環境（平山times）で、意図的な型エラーが発生しました！");
   };
 
   return (
