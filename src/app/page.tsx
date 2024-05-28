@@ -3,15 +3,12 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const ENVIRONMENT = process.env.NEXT_PUBLIC_ENVIRONMENT;
-console.log("ENVIRONMENT", ENVIRONMENT);
-
 export default function Home() {
   const [error, setError] = useState(false);
 
   const handleClick = () => {
     setError(true);
-    throw new Error( "「" + ENVIRONMENT + "」で意図的なエラーが発生しました！");
+    throw new Error("意図的なエラーが発生しました！");
   };
 
   return (
