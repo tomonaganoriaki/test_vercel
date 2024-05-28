@@ -11,7 +11,7 @@ export default function Home() {
 
   const handleClick = () => {
     setError(true);
-    throw new Error( ENVIRONMENT + "意図的なエラーが発生しました！");
+    throw new Error( "「" + ENVIRONMENT + "」で意図的なエラーが発生しました！");
   };
 
   return (
