@@ -8,7 +8,7 @@ export default function Home() {
 
   const handleClick = () => {
     setError(true);
-    throw new Error("STG環境（朝長times）で、意図的なエラーが発生しました！");
+    throw new RangeError("STG環境（朝長times）で、意図的なレンジエラーが発生しました！");
   };
 
   return (
